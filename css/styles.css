@@ -80,7 +80,7 @@ a:hover {
 }
 
 h2 {
-    text-align: left;
+    text-align: center;
     border-bottom: none;
     background-color: var(--gray-light);
     padding: 10px;
@@ -121,5 +121,6 @@ footer {
     }
 
 }
+
 
 
