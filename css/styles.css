@@ -18,6 +18,37 @@ img, picture, video, canvas, svg {
     --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+/* Play Animation Button style and position*/
+#play-animation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    position: fixed;
+    right: 60px;
+    bottom: 30px;
+    border-radius: 10px;
+    border-color: #e6e6e6;
+    background: white;
+    font-family: var(--font-stack);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+#play-animation .playgif {
+    display: block;
+    width: 100%;
+    max-width: 40px;
+    height: auto;
+    object-fit: contain;
+    pointer-events: none;
+}
+
 body {
     font-family: var(--font-stack);
     color: var(--text-color);
@@ -98,6 +129,7 @@ ul {
     gap: 10px 20px; 
 }
 
+
 footer {
     margin-top: 80px;
     margin-bottom: 40px;
@@ -120,8 +152,14 @@ footer {
         margin-top: -35px;
     }
 
+    #play-animation {
+    right: 10px;
+    bottom: 10px;
+    font-size: 12px;
+    }
+
+    #play-animation .playgif {
+    max-width: 32px;
+    }
+
 }
-
-
-
-
