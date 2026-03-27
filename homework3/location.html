@@ -74,7 +74,7 @@
 
     <div class="relative z-10 text-center px-4 max-w-3xl mx-auto">
       <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-gol mb-6"><span class="border-b-6 border-gold">Location</span> Awareness</h1>
-      <p class="text-lg md:text-xl text-walnut mb-8">Display current location of the user visiting this page.</p>
+      <p id="user-location" class="text-lg md:text-xl text-walnut mb-8">Detecting your coordinates, pleaes ensure location access is enabled.</p>
     </div>
   </section>
 
@@ -109,10 +109,25 @@
     zoom: 12,
     center: [37.7897, -122.3972],
     doubleClickZoom: false,
-}).locate({setView: true});
+  }).locate({setView: true});
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
+
+  map.on('locationfound', function(e) {
+    var lat = e.latlng.lat.toFixed(6);
+  var lng = e.latlng.lng.toFixed(6);
+
+  document.getElementById('user-location').textContent = `Your coordinates are ${lat}, ${lng}`;
+    var marker = L.marker(e.latlng).addTo(map);
+    
+    marker.bindTooltip('You are here!', {
+      permanent: false,  
+      direction: 'top',
+      offset: [-15, -10]
+    });
+  });       
+    
 </script>
 
 </body>
