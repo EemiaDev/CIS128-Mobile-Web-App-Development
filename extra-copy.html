@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Device Databases</title>
+  <meta name="description" content="WURFL (Wireless Universal Resource FiLe) capabilities">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Lora&family=Inter">
+  <style type="text/tailwindcss">
+    @theme {
+      --color-gold: #F5A623;
+      --color-terracotta: #D9735A;
+      --color-cream: #F9F2E7;
+      --color-linen: #EDE4D8;
+      --color-walnut: #3D2B1F;
+      --font-heading: 'Lora', Georgia, serif;
+      --font-body: 'Inter', system-ui, sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-cream text-walnut font-body">
+
+<!-- Navigation -->
+<header class="sticky top-0 z-50 bg-cream shadow-sm">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+
+    <!-- Logo -->
+    <a href="index.html" class="font-heading text-2xl font-bold text-gold tracking-tight">
+      Lumi <span class="text-walnut">Toys</span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-walnut">
+      <a href="products.html" class="hover:text-gold transition-colors">Products</a>
+      <a href="contact.html" class="hover:text-gold transition-colors">Contact</a>
+      <a href="location.html" class="hover:text-gold transition-colors">Location</a>
+      <a href="extra.html" class="hover:text-gold transition-colors">Extra</a>
+    </nav>
+
+    <!-- Hamburger Button -->
+    <button id="menu-btn" class="md:hidden p-2 rounded-lg hover:bg-linen transition-colors" aria-label="Toggle navigation">
+      <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 h-5 fill-walnut"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+      <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="w-5 h-5 fill-walnut hidden"><path d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg>
+    </button>
+  </div>
+  
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-cream border-t border-linen px-4 pb-6 pt-2 flex flex-col gap-4 text-sm font-medium">
+    <a href="products.html" class="text-right">Products</a>
+    <a href="contact.html" class="text-right">Contact</a>
+    <a href="location.html" class="text-right">Location</a>
+    <a href="extra.html" class="text-right">Extra</a>
+  </div>
+   
+</header>
+
+<main>
+  <!-- Banner Section -->
+  <section class="relative min-h-[25vh] flex items-center justify-center overflow-hidden py-4 md:py-4">
+
+    <div class="absolute inset-0 bg-linen"></div>
+
+    <div class="relative z-10 text-center px-4 max-w-3xl mx-auto">
+      <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-gol mb-6"><span class="border-b-6 border-gold">WURFL</span> Database </h1>
+      <p class="text-lg md:text-xl text-walnut mb-8"> Describe 3 capabilities offered by WURFL database.</p>
+    </div>
+  </section>
+
+
+  <div class="max-w-3xl mx-auto px-4 py-14 md:py-20">
+
+    <!-- Accordion Group -->
+    <div class="flex flex-col gap-4">
+
+    <details class="group border border-linen rounded-xl overflow-hidden bg-cream" open>
+      <summary class="flex items-center justify-between px-5 py-4 cursor-pointer hover:bg-linen transition-colors list-none">
+        <span class="font-heading text-xl font-bold text-walnut">is_robot</span>
+      </summary>
+        <div class="pb-4 px-5">
+          <span class="text-walnut text-s mt-0.5">
+            The is_robot capability is a boolean check to identify "non-human" traffic, such as search engine crawlers, spiders, and social media scrapers. 
+            It allows developers to optimize server performance and clean up their data. For example, a developer can use this capability to ensure that website analytics accurately reflect 
+            real human engagement rather than being skewed by web crawlers.
+          </span>
+         </div>
+    </details>
+
+    <details class="group border border-linen rounded-xl overflow-hidden bg-cream">
+      <summary class="flex items-center justify-between px-5 py-4 cursor-pointer hover:bg-linen transition-colors list-none">
+        <span class="font-heading text-xl font-bold text-walnut">device_os</span>
+      </summary>
+          <div class="pb-4 px-5">
+            <span class="text-walnut text-s mt-0.5">
+              The device_os capability identifies the specific operating system running on a requesting device, such as iOS, Android, Windows, or macOS.
+              This capability allows developers to make high-level functional decisions. For example, a developer can use this capability to automatically display the correct download button 
+              for a mobile app (Apple App Store vs. Google Play) or a desktop application (.exe for Windows vs. .dmg for Mac). This ensures the user is directed to the software compatible with their specific hardware.
+            </span>
+          </div>
+    </details>
+
+    <details class="group border border-linen rounded-xl overflow-hidden bg-cream">
+      <summary class="flex items-center justify-between px-5 py-4 cursor-pointer hover:bg-linen transition-colors list-none">
+        <span class="font-heading text-xl font-bold text-walnut">is_full_desktop</span>
+      </summary>
+          <div class="pb-4 px-5">
+            <span class="text-walnut text-s mt-0.5">
+              The is_full_desktop capability is a boolean check used to confirm if a user is accessing an application from a computer rather than a tablet or mobile device.
+              It allows developers to serve feature-rich versions that are optimized for large screens and mouse-based input. For example, if the boolean returns a false, then this request
+              is from a tablet or mobile device, so the developer might choose to collapse the sidebar by default to allow maximum real estate for actual contents.
+            </span>
+          </div>
+    </details>
+  </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-gold px-4 py-6">
+  <p class="text-center text-s text-walnut/80">&copy; 2025 Lumi Toys. All rights reserved.</p>
+</footer>
+
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const iconOpen = document.getElementById('icon-open');
+  const iconClose = document.getElementById('icon-close');
+
+  btn.addEventListener('click', () => {
+    const isHidden = menu.classList.toggle('hidden');
+    iconOpen.classList.toggle('hidden', !isHidden);
+    iconClose.classList.toggle('hidden', isHidden);
+  });
+</script>
+
+
+</body>
+</html>
