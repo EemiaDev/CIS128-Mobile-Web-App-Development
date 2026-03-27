@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lumi Toys - Making learning fun</title>
+  <meta name="description" content="Lumi Toys - Montessori-inspired toys for all age groups">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Lora&family=Inter">
+  <style type="text/tailwindcss">
+    @theme {
+      --color-gold: #F5A623;
+      --color-terracotta: #D9735A;
+      --color-cream: #F9F2E7;
+      --color-linen: #EDE4D8;
+      --color-walnut: #3D2B1F;
+      --font-heading: 'Lora', Georgia, serif;
+      --font-body: 'Inter', system-ui, sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-cream text-walnut font-body">
+
+<!-- Navigation -->
+<header class="sticky top-0 z-50 bg-cream shadow-sm">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+
+    <!-- Logo -->
+    <a href="index.html" class="font-heading text-2xl font-bold text-gold tracking-tight">
+      Lumi <span class="text-walnut">Toys</span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-walnut">
+      <a href="products.html" class="hover:text-gold transition-colors">Products</a>
+      <a href="contact.html" class="hover:text-gold transition-colors">Contact</a>
+      <a href="location.html" class="hover:text-gold transition-colors">Location</a>
+      <a href="extra.html" class="hover:text-gold transition-colors">Extra</a>
+    </nav>
+
+    <!-- Hamburger Button -->
+    <button id="menu-btn" class="md:hidden p-2 rounded-lg hover:bg-linen transition-colors" aria-label="Toggle navigation">
+      <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 h-5 fill-walnut"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+      <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="w-5 h-5 fill-walnut hidden"><path d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg>
+    </button>
+  </div>
+  
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-cream border-t border-linen px-4 pb-6 pt-2 flex flex-col gap-4 text-sm font-medium">
+    <a href="products.html" class="text-right">Products</a>
+    <a href="contact.html" class="text-right">Contact</a>
+    <a href="location.html" class="text-right">Location</a>
+    <a href="extra.html" class="text-right">Extra</a>
+  </div>
+   
+</header>
+
+<main>
+  <!-- Hero Section -->
+  <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+    <img src="assets/hero.png" alt="A child playing with wooden educational toys" class="absolute inset-0 w-full h-full object-cover">
+
+    <div class="absolute inset-0 bg-cream/60"></div>
+
+    <div class="relative z-10 text-center px-4 max-w-3xl mx-auto">
+      <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-walnut mb-6">Making learning <span class="border-b-6 border-gold">fun</span></h1>
+      <p class="text-lg md:text-xl text-walnut mb-8">Montessori-inspired toys designed to support every child's developmental milestones. Safe for little hands and meaningful for growing minds.</p>
+      <a href="products.html" class="inline-block bg-gold text-walnut px-8 py-4 rounded-full font-semibold text-base hover:bg-gold/80 transition-colors shadow-sm">Explore Toys</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="bg-cream px-4 py-16 md:py-24">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+      <div class="rounded-2xl overflow-hidden hidden md:block">
+        <img src="assets/stackingtoy.png" alt="Wooden stacking toy" class="w-full h-full object-cover">
+      </div>
+
+      <div>
+        <span class="inline-block bg-terracotta/15 text-terracotta text-xs font-semibold px-3 py-1 rounded-full mb-4 tracking-wide uppercase">
+          Since 2001
+        </span>
+        <h2 class="font-heading text-3xl md:text-4xl font-bold text-walnut mb-5">Our Story</h2>
+        <p class="text-walnut/70 text-base leading-relaxed mb-4">
+          Lumi Toys is a company that opened its doors in 2001 and it has kept its mission for all those years. What started as a small workshop in San Francisco has grown into a trusted name for parents who believe that the best toys are the simplest ones.
+        </p>
+        <p class="text-walnut/70 text-base leading-relaxed mb-4">
+          The mission of our company is to create toys that are safe for kindergarten kids but that challenge the kids' mind and motor skills, making learning a fun task. Every piece we make is designed with a specific developmental goal in mind: from building grip strength to recognizing shapes, colors, and patterns.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="bg-linen px-4 py-16 md:py-24">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="font-heading text-3xl md:text-4xl font-bold text-walnut mb-3">By the way, parents love our toys too</h2>
+        <p class="text-walnut/60 text-base max-w-xl mx-auto">Hear it from the Lumi community</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <div class="bg-cream rounded-2xl shadow-md p-6 flex flex-col gap-4">
+          <p class="text-walnut/70 text-sm leading-relaxed italic">
+            "My 18-month-old has been so engaged with these stacking rings. We were able to reduce her screen time with these beautiful toys."
+          </p>
+          <div class="flex items-center gap-3 mt-auto">
+            <img src="assets/Sarah.jpg" alt="Sarah M." class="w-9 h-9 rounded-full object-cover">
+            <div>
+              <p class="text-sm font-semibold text-walnut">Sarah M.</p>
+              <p class="text-xs text-walnut/50">Mom of a toddler, Portland</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-cream rounded-2xl shadow-md p-6 flex flex-col gap-4">
+          <p class="text-walnut/70 text-sm leading-relaxed italic">
+            "I bought a shape sorter for my nephew and his parents were genuinely impressed. It feels nicely made and thoughtfully designed. Will be back for more gifts."
+          </p>
+          <div class="flex items-center gap-3 mt-auto">
+            <img src="assets/James.jpg" alt="James T." class="w-9 h-9 rounded-full object-cover">
+            <div>
+              <p class="text-sm font-semibold text-walnut">James T.</p>
+              <p class="text-xs text-walnut/50">Proud uncle, Seattle</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-cream rounded-2xl shadow-md p-6 flex flex-col gap-4">
+          <p class="text-walnut/70 text-sm leading-relaxed italic">
+            "As a Montessori teacher, I recommend Lumi Toys to every parent. The quality is on par with brands that cost twice as much."
+          </p>
+          <div class="flex items-center gap-3 mt-auto">
+            <img src="assets/Leila.jpg" alt="Leila R." class="w-9 h-9 rounded-full object-cover">
+            <div>
+              <p class="text-sm font-semibold text-walnut">Leila R.</p>
+              <p class="text-xs text-walnut/50">Montessori educator, San Francisco</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+<!-- Footer -->
+<footer class="bg-gold px-4 py-6">
+  <p class="text-center text-s text-walnut/80">&copy; 2025 Lumi Toys. All rights reserved.</p>
+</footer>
+
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const iconOpen = document.getElementById('icon-open');
+  const iconClose = document.getElementById('icon-close');
+
+  btn.addEventListener('click', () => {
+    const isHidden = menu.classList.toggle('hidden');
+    iconOpen.classList.toggle('hidden', !isHidden);
+    iconClose.classList.toggle('hidden', isHidden);
+  });
+</script>
+
+</body>
+</html>

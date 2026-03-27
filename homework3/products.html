@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lumi Toys - Products</title>
+  <meta name="description" content="Product categories inlcude sensory, building bloks, music and sound.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Lora&family=Inter">
+  <style type="text/tailwindcss">
+    @theme {
+      --color-gold: #F5A623;
+      --color-terracotta: #D9735A;
+      --color-cream: #F9F2E7;
+      --color-linen: #EDE4D8;
+      --color-walnut: #3D2B1F;
+      --font-heading: 'Lora', Georgia, serif;
+      --font-body: 'Inter', system-ui, sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-cream text-walnut font-body">
+
+<!-- Navigation -->
+<header class="sticky top-0 z-50 bg-cream shadow-sm">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+
+    <!-- Logo -->
+    <a href="index.html" class="font-heading text-2xl font-bold text-gold tracking-tight">
+      Lumi <span class="text-walnut">Toys</span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-walnut">
+      <a href="products.html" class="hover:text-gold transition-colors">Products</a>
+      <a href="contact.html" class="hover:text-gold transition-colors">Contact</a>
+      <a href="location.html" class="hover:text-gold transition-colors">Location</a>
+      <a href="extra.html" class="hover:text-gold transition-colors">Extra</a>
+    </nav>
+
+    <!-- Hamburger Button -->
+    <button id="menu-btn" class="md:hidden p-2 rounded-lg hover:bg-linen transition-colors" aria-label="Toggle navigation">
+      <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 h-5 fill-walnut"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+      <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="w-5 h-5 fill-walnut hidden"><path d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg>
+    </button>
+  </div>
+  
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-cream border-t border-linen px-4 pb-6 pt-2 flex flex-col gap-4 text-sm font-medium">
+    <a href="products.html" class="text-right">Products</a>
+    <a href="contact.html" class="text-right">Contact</a>
+    <a href="location.html" class="text-right">Location</a>
+    <a href="extra.html" class="text-right">Extra</a>
+  </div>
+   
+</header>
+
+<main>
+    <!-- Banner Section -->
+    <section class="relative min-h-[25vh] flex items-center justify-center overflow-hidden py-4 md:py-4">
+
+      <div class="absolute inset-0 bg-linen"></div>
+  
+      <div class="relative z-10 text-center px-4 max-w-3xl mx-auto">
+        <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-walnut mb-6">Thoughtfully <span class="border-b-6 border-gold">Crafted</span> Toys</h1>
+        <p class="text-lg md:text-xl text-walnut mb-8">Help the little ones explore, build, and discover.</p>
+      </div>
+    </section>
+
+  <div class="max-w-3xl mx-auto px-4 py-14 md:py-20 flex flex-col gap-4">
+
+    <!-- Accordion Group 1 -->
+    <div class="hs-accordion-group">
+      <div class="hs-accordion border border-linen rounded-2xl overflow-hidden bg-cream" id="hs-cat-sensory">
+  
+        <button class="hs-accordion-toggle w-full flex items-center gap-4 px-6 py-5 text-left hover:bg-linen transition-colors focus:outline-none" aria-expanded="false" aria-controls="hs-cat-sensory-content">
+          <img src="assets/cover1.png" alt="Sensory category" class="w-12 h-12 rounded-lg object-cover shrink-0">
+          <span>
+            <span class="font-heading text-xl font-bold text-walnut">Sensory</span><br>
+            <span class="text-walnut/50 text-s mt-0.5">Touch, texture, and tactile exploration</span>
+          </span>
+        </button>
+  
+        <div id="hs-cat-sensory-content" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-cat-sensory">
+          <div class="px-4 pb-4 pt-1">
+  
+            <div class="hs-accordion-group flex flex-col gap-2">
+  
+              <div class="hs-accordion border border-linen rounded-xl overflow-hidden bg-cream" id="hs-sensory-p1">
+                <button class="hs-accordion-toggle w-full flex items-center justify-between px-5 py-3 text-left hover:bg-linen transition-colors focus:outline-none" aria-expanded="false" aria-controls="hs-sensory-p1-content">
+                  <span class="font-heading text-sm font-bold text-walnut">Texture Blocks</span>
+                  <span class="bg-terracotta/15 text-terracotta text-xs font-semibold px-2 py-0.5 rounded-full">6–12 months</span>
+                </button>
+                <div id="hs-sensory-p1-content" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-sensory-p1">
+                  <div class="flex flex-col sm:flex-row gap-4 px-5 pb-5 pt-1">
+                    <img src="assets/sensory1.jpg" alt="Wooden texture blocks set" class="w-full sm:w-60 h-60 object-cover rounded-xl shrink-0">
+                    <p class="text-walnut/60 text-sm leading-relaxed">Six wooden blocks, each with a distinct surface texture to stimulate tactile exploration and sensory awareness in early infancy.</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="hs-accordion border border-linen rounded-xl overflow-hidden bg-cream" id="hs-sensory-p2">
+                <button class="hs-accordion-toggle w-full flex items-center justify-between px-5 py-3 text-left hover:bg-linen transition-colors focus:outline-none" aria-expanded="false" aria-controls="hs-sensory-p2-content">
+                  <span class="font-heading text-sm font-bold text-walnut">Rainbow Stacking Rings</span>
+                  <span class="bg-terracotta/15 text-terracotta text-xs font-semibold px-2 py-0.5 rounded-full">6–24 months</span>
+                </button>
+                <div id="hs-sensory-p2-content" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-sensory-p2">
+                  <div class="flex flex-col sm:flex-row gap-4 px-5 pb-5 pt-1">
+                    <img src="assets/sensory2.jpg" alt="Rainbow wooden stacking rings" class="w-full sm:w-60 h-60 object-cover rounded-xl shrink-0">
+                    <p class="text-walnut/60 text-sm leading-relaxed">Hand-painted rings in six natural hues. Sized for small hands to grip, stack, and sort — building coordination and color recognition together.</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="hs-accordion border border-linen rounded-xl overflow-hidden bg-cream" id="hs-sensory-p3">
+                <button class="hs-accordion-toggle w-full flex items-center justify-between px-5 py-3 text-left hover:bg-linen transition-colors focus:outline-none" aria-expanded="false" aria-controls="hs-sensory-p3-content">
+                  <span class="font-heading text-sm font-bold text-walnut">Sensory Ball Set</span>
+                  <span class="bg-terracotta/15 text-terracotta text-xs font-semibold px-2 py-0.5 rounded-full">12–24 months</span>
+                </button>
+                <div id="hs-sensory-p3-content" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-sensory-p3">
+                  <div class="flex flex-col sm:flex-row gap-4 px-5 pb-5 pt-1">
+                    <img src="assets/sensory3.jpg" alt="Wooden sensory ball set" class="w-full sm:w-60 h-60 object-cover rounded-xl shrink-0">
+                    <p class="text-walnut/60 text-sm leading-relaxed">Lightweight wooden balls with carved ridges and smooth zones. Safe for grasping, rolling, and mouthing during early exploration stages.</p>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Accordion Group 2 -->
+    <div class="hs-accordion-group">
+      <div class="hs-accordion border border-linen rounded-2xl overflow-hidden bg-cream " id="hs-cat-blocks">
+  
+        <button class="hs-accordion-toggle w-full flex items-center gap-4 px-6 py-5 text-left hover:bg-linen transition-colors focus:outline-none" aria-expanded="false" aria-controls="hs-cat-blocks-content">
+          <img src="assets/cover2.png" alt="Building Blocks category" class="w-12 h-12 rounded-lg object-cover shrink-0">
+          <span>
+            <span class="font-heading text-xl font-bold text-walnut">Building Blocks</span><br>
+            <span class="text-walnut/50 text-s mt-0.5">Spatial thinking and creative construction</span>
+          </span>
+        </button>
+  
+        <div id="hs-cat-blocks-content" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-cat-blocks">
+          <div class="px-4 pb-4 pt-1">
+  
+            <div class="hs-accordion-group flex flex-col gap-2">
+  
+              <div class="hs-accordion border border-linen rounded-xl overflow-hidden bg-cream" id="hs-blocks-p1">
+                <button class="hs-accordion-toggle w-full flex items-center justify-between px-5 py-3 text-left hover:bg-linen transition-colors focus:outline-none" aria-expanded="false" aria-controls="hs-blocks-p1-content">
+                  <span class="font-heading text-sm font-bold text-walnut">Classic Unit Blocks</span>
+                  <span class="bg-terracotta/15 text-terracotta text-xs font-semibold px-2 py-0.5 rounded-full">12–24 months</span>
+                </button>
+                <div id="hs-blocks-p1-content" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-blocks-p1">
+                  <div class="flex flex-col sm:flex-row gap-4 px-5 pb-5 pt-1">
+                    <img src="assets/building1.jpg" alt="Classic wooden unit blocks" class="w-full sm:w-60 h-60 object-cover rounded-xl shrink-0">
+                    <p class="text-walnut/60 text-sm leading-relaxed">A 20-piece set of proportional hardwood blocks in four shapes. Teaches balance, spatial reasoning, and cause-and-effect through open-ended play.</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="hs-accordion border border-linen rounded-xl overflow-hidden bg-cream" id="hs-blocks-p2">
+                <button class="hs-accordion-toggle w-full flex items-center justify-between px-5 py-3 text-left hover:bg-linen transition-colors focus:outline-none" aria-expanded="false" aria-controls="hs-blocks-p2-content">
+                  <span class="font-heading text-sm font-bold text-walnut">Shape Sorter Cube</span>
+                  <span class="bg-terracotta/15 text-terracotta text-xs font-semibold px-2 py-0.5 rounded-full">12–30 months</span>
+                </button>
+                <div id="hs-blocks-p2-content" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-blocks-p2">
+                  <div class="flex flex-col sm:flex-row gap-4 px-5 pb-5 pt-1">
+                    <img src="assets/building2.jpg" alt="Wooden shape sorter cube" class="w-full sm:w-60 h-60 object-cover rounded-xl shrink-0">
+                    <p class="text-walnut/60 text-sm leading-relaxed">Six shape openings, six matching blocks. A timeless problem-solving toy that builds hand-eye coordination and early geometry concepts.</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="hs-accordion border border-linen rounded-xl overflow-hidden bg-cream" id="hs-blocks-p3">
+                <button class="hs-accordion-toggle w-full flex items-center justify-between px-5 py-3 text-left hover:bg-linen transition-colors focus:outline-none" aria-expanded="false" aria-controls="hs-blocks-p3-content">
+                  <span class="font-heading text-sm font-bold text-walnut">Arch Building Set</span>
+                  <span class="bg-terracotta/15 text-terracotta text-xs font-semibold px-2 py-0.5 rounded-full">18–36 months</span>
+                </button>
+                <div id="hs-blocks-p3-content" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-blocks-p3">
+                  <div class="flex flex-col sm:flex-row gap-4 px-5 pb-5 pt-1">
+                    <img src="assets/building3.jpg" alt="Wooden arch building blocks" class="w-full sm:w-60 h-60 object-cover rounded-xl shrink-0">
+                    <p class="text-walnut/60 text-sm leading-relaxed">Curved and flat natural wood pieces that invite bridge and tunnel building. Encourages imaginative play while developing structural thinking.</p>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Accordion Group 3 -->
+    <div class="hs-accordion-group">
+      <div class="hs-accordion border border-linen rounded-2xl overflow-hidden bg-cream" id="hs-cat-music">
+  
+        <button class="hs-accordion-toggle w-full flex items-center gap-4 px-6 py-5 text-left hover:bg-linen transition-colors focus:outline-none" aria-expanded="false" aria-controls="hs-cat-music-content">
+          <img src="assets/cover3.png" alt="Music and Sound category" class="w-12 h-12 rounded-lg object-cover shrink-0">
+          <span>
+            <span class="font-heading text-xl font-bold text-walnut">Music &amp; Sound</span><br>
+            <span class="text-walnut/50 text-s mt-0.5">Rhythm, listening, and auditory development</span>
+          </span>
+        </button>
+  
+        <div id="hs-cat-music-content" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-cat-music">
+          <div class="px-4 pb-4 pt-1">
+  
+            <div class="hs-accordion-group flex flex-col gap-2">
+  
+              <div class="hs-accordion border border-linen rounded-xl overflow-hidden bg-cream" id="hs-music-p1">
+                <button class="hs-accordion-toggle w-full flex items-center justify-between px-5 py-3 text-left hover:bg-linen transition-colors focus:outline-none" aria-expanded="false" aria-controls="hs-music-p1-content">
+                  <span class="font-heading text-sm font-bold text-walnut">Mini Xylophone</span>
+                  <span class="bg-terracotta/15 text-terracotta text-xs font-semibold px-2 py-0.5 rounded-full">12–24 months</span>
+                </button>
+                <div id="hs-music-p1-content" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-music-p1">
+                  <div class="flex flex-col sm:flex-row gap-4 px-5 pb-5 pt-1">
+                    <img src="assets/music1.jpg" alt="Wooden mini xylophone" class="w-full sm:w-60 h-60 object-cover rounded-xl shrink-0">
+                    <p class="text-walnut/60 text-sm leading-relaxed">Eight color-coded wooden bars with a smooth mallet. Introduces musical cause and effect, color sequencing, and fine motor precision.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hs-accordion border border-linen rounded-xl overflow-hidden bg-cream" id="hs-music-p2">
+                <button class="hs-accordion-toggle w-full flex items-center justify-between px-5 py-3 text-left hover:bg-linen transition-colors focus:outline-none" aria-expanded="false" aria-controls="hs-music-p2-content">
+                  <span class="font-heading text-sm font-bold text-walnut">Egg Shaker Set</span>
+                  <span class="bg-terracotta/15 text-terracotta text-xs font-semibold px-2 py-0.5 rounded-full">12–24 months</span>
+                </button>
+                <div id="hs-music-p2-content" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-music-p2">
+                  <div class="flex flex-col sm:flex-row gap-4 px-5 pb-5 pt-1">
+                    <img src="assets/music2.jfif" alt="Wooden egg shaker set" class="w-full sm:w-60 h-60 object-cover rounded-xl shrink-0">
+                    <p class="text-walnut/60 text-sm leading-relaxed">Four palm-sized wooden eggs filled with different natural materials. Each produces a unique sound, teaching listening discrimination and rhythm.</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="hs-accordion border border-linen rounded-xl overflow-hidden bg-cream" id="hs-music-p3">
+                <button class="hs-accordion-toggle w-full flex items-center justify-between px-5 py-3 text-left hover:bg-linen transition-colors focus:outline-none" aria-expanded="false" aria-controls="hs-music-p3-content">
+                  <span class="font-heading text-sm font-bold text-walnut">Toddler Drum &amp; Mallet</span>
+                  <span class="bg-terracotta/15 text-terracotta text-xs font-semibold px-2 py-0.5 rounded-full">12–36 months</span>
+                </button>
+                <div id="hs-music-p3-content" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-music-p3">
+                  <div class="flex flex-col sm:flex-row gap-4 px-5 pb-5 pt-1">
+                    <img src="assets/music3.jpg" alt="Wooden toddler drum with mallet" class="w-full sm:w-60 h-60 object-cover rounded-xl shrink-0">
+                    <p class="text-walnut/60 text-sm leading-relaxed">A compact natural wood drum with a soft-tipped mallet. Satisfying to play and gentle enough for indoor use — even for caregivers' ears.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-gold px-4 py-6">
+  <p class="text-center text-s text-walnut/80">&copy; 2025 Lumi Toys. All rights reserved.</p>
+</footer>
+
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const iconOpen = document.getElementById('icon-open');
+  const iconClose = document.getElementById('icon-close');
+
+  btn.addEventListener('click', () => {
+    const isHidden = menu.classList.toggle('hidden');
+    iconOpen.classList.toggle('hidden', !isHidden);
+    iconClose.classList.toggle('hidden', isHidden);
+  });
+</script>
+
+<!-- Preline UI -->
+<script src="https://cdn.jsdelivr.net/npm/preline/dist/preline.js"></script>
+
+</body>
+</html>
