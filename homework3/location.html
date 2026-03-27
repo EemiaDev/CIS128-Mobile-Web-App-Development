@@ -121,7 +121,7 @@
   document.getElementById('user-location').textContent = `Your coordinates are ${lat}, ${lng}`;
     var marker = L.marker(e.latlng).addTo(map);
     
-    marker.bindTooltip('You are here!', {
+    marker.bindTooltip('You are here', {
       permanent: false,  
       direction: 'top',
       offset: [-15, -10]
