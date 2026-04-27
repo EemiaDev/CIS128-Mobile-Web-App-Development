@@ -2,7 +2,7 @@
     "name": "Progressive Web Applications",
     "short_name": "PWA App",
     "description": "PWA with offline support and local storage.",
-    "start_url": "/index.html",
+    "start_url": "/CIS128-Mobile-Web-App-Development/homework4/index.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#000000",
