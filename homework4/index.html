@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reliable, fast, and engaging web applications.">
+    <title>Progressive Web Applications (PWA)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    
+    <header>
+        <h1>Progressive Web Applications</h1>
+        <p class="tagline">Reliable, fast, and engaging mobile web experience</p>
+    </header>
+    
+    <main>
+        <div class="section-container">
+            <section class="name-section">
+                <h2>Local Storage</h2>
+                <label for="nameInput">Tell us your name:</label>
+                <input type="text" id="nameInput" placeholder="Type your name">
+                <p id="greeting"></p>
+            </section>
+            
+            <section class="bg-selector">
+                <h2>Page Background</h2>
+                <label for="bgSelect">Select a background image:</label>
+                <select id="bgSelect">
+                    <option value="">-- Select background --</option>
+                    <option value="blue">Light Blue</option>
+                    <option value="gold">Light Gold</option>
+                </select>
+            </section>
+
+            <section class="pwa-info">
+                <h2>About PWAs</h2>
+                <p>
+                    A Progressive Web Application (PWA) is a web application built using standard web technologies like
+                    HTML, CSS, and JavaScript, but designed to deliver an experience that feels like a native app.
+                    PWAs are reliable, loading instantly regardless of network conditions thanks to
+                    service workers that pre-cache key resources. They are fast, responding quickly
+                    to user interactions with smooth animations and fluid scrolling. Users can also install them 
+                    directly to their home screen without going through an app store and receive push notifications just like native apps.
+                </p>       
+                <p>
+                    What makes PWAs exceptional is their ability to work offline or on poor network connections.
+                    Service workers act as a programmable layer between the browser and the network, intercepting requests
+                    and serving cached content when a connection is unavailable. Combined with a Web App Manifest, PWAs can be
+                    installed on a device and launched from the home screen, running in their own window without any
+                    browser UI. This makes them a strong alternative to native apps as they are available across all platforms and 
+                    maintainable within a single codebase.
+                </p>    
+            </section>
+        </div>
+
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 Aimee Jin.</p>
+    </footer>
+
+    <script src="pwa.js"></script>    
+</body>
+</html>
