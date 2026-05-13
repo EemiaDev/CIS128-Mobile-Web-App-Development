@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A comparative analysis of Flutter, React Native, and Ionic">
+    <title>Hybrid Applications</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <header>
+        <h1>Hybrid Applications</h1>
+        <p class="tagline">A comparative analysis of Flutter, React Native, and Ionic</p>
+    </header>
+    
+    <main>
+        <div class="section-container">
+
+            <section class="summary">
+                <h2>Executive Summary</h2>
+                <p>
+                    As our team evaluates the next generation of mobile delivery, three cross-platform frameworks have emerged as the leading candidates: 
+                    Flutter, React Native, and Ionic. Each represents a distinct solution to address the same problem, allowing us to reach users on iOS 
+                    and Android devices from a single codebase. This report summarizes the key differences across performance characteristics, developer 
+                    experience, and long-term strategic fit. 
+                </p>        
+            </section>
+
+            <section class="comparison">
+                <h2>At a Glance</h2>
+                <p>Key decision factors for each framework.</p>
+
+                <div class="comparison-grid" role="table" aria-label="Framework comparison table">
+
+                    <!-- Header row -->
+                    <div class="grid-header" role="rowgroup">
+                        <div class="grid-cell cell-label" role="columnheader">
+                        </div>
+                        <div class="grid-cell cell-head flutter-head" role="columnheader">
+                            <strong class="fw-name">Flutter</strong>
+                        </div>
+                        <div class="grid-cell cell-head rn-head" role="columnheader">       
+                            <strong class="fw-name">React Native</strong>
+                        </div>
+                        <div class="grid-cell cell-head ionic-head" role="columnheader">
+                            <strong class="fw-name">Ionic</strong>
+                        </div>
+                    </div>
+
+                    <!-- Data rows -->
+                    <div class="grid-body" role="rowgroup">
+
+                        <div class="grid-row" role="row" data-label="Platforms">
+                            <div class="grid-cell cell-label" role="rowheader">Platforms</div>
+                            <div class="grid-cell" role="cell">iOS · Android · Web · Desktop</div>
+                            <div class="grid-cell" role="cell">iOS · Android + community web</div>
+                            <div class="grid-cell" role="cell">iOS · Android · Web · PWA</div>
+                        </div>
+
+                        <div class="grid-row" role="row" data-label="Performance">
+                            <div class="grid-cell cell-label" role="rowheader">Performance</div>
+                            <div class="grid-cell" role="cell">60-120 fps, AOT compiled</div>
+                            <div class="grid-cell" role="cell">Near-native via Hermes engine</div>
+                            <div class="grid-cell" role="cell">Good for standard apps</div>
+                        </div>
+
+                        <div class="grid-row" role="row" data-label="Rendering">
+                            <div class="grid-cell cell-label" role="rowheader">Rendering</div>
+                            <div class="grid-cell" role="cell">Own engine, no web view</div>
+                            <div class="grid-cell" role="cell">Native components via JS bridge</div>
+                            <div class="grid-cell" role="cell">WebView (browser-based)</div>
+                        </div>
+
+                        <div class="grid-row" role="row" data-label="Learning Curve">
+                            <div class="grid-cell cell-label" role="rowheader">Learning curve</div>
+                            <div class="grid-cell" role="cell">Moderate</div>
+                            <div class="grid-cell" role="cell">Low</div>
+                            <div class="grid-cell" role="cell">Lowest</div>
+                        </div>
+
+                        <div class="grid-row" role="row" data-label="Best For">
+                            <div class="grid-cell cell-label" role="rowheader">Best for</div>
+                            <div class="grid-cell" role="cell">Visually rich, multi-platform apps</div>
+                            <div class="grid-cell" role="cell">JS teams, enterprise-scale apps</div>
+                            <div class="grid-cell" role="cell">Web-first, budget-sensitive projects</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="Flutter">
+                <h2>Flutter</h2>
+                <p>
+                    Flutter is Google's open-source UI toolkit for building natively compiled applications for mobile, web, and desktop from a single codebase. 
+                    Unlike other frameworks, Flutter does not use the platform's native components or a web view，it has its own rendering engine that draws every pixel directly. 
+                    This gives Flutter pixel-perfect UI consistency across all platforms and contributes to its performance lead. 
+                </p>     
+                <p>
+                    Flutter uses Dart, a language designed by Google for speed and efficiency. Dart is ahead-of-time (AOT) compiled to native machine code, which means there is no 
+                    interpreter or JavaScript bridge at runtime. The result is smooth performance at 60-120 frames per second, even for graphically intensive applications.
+                </p>
+                <h3>Strengths</h3>
+                <ul>
+                    <li>Best raw performance of the three frameworks</li>
+                    <li>Pixel-perfect UI consistency from a single codebase</li>
+                    <li>Hot reload in 0.4-0.8 seconds (developers see changes instantly without losing app state)</li>
+                    <li>Broadest platform reach: mobile, web, desktop, and even embedded systems</li>
+                    <li>Highest community momentum of the three</li>
+                    <li>Enterprise-grade stability</li>
+                </ul> 
+
+                <h3>Limitations</h3>
+                <ul>
+                    <li>Dart is used by only ~4.2% of professional developers (vs. 78% for JavaScript)</li>
+                    <li>Larger app binary size compared to React Native trimmed builds</li>
+                    <li>Some native platform integrations require custom development</li>
+                    <li>Fewer third-party libraries than React Native's npm ecosystem</li>
+                </ul>
+
+                <h3>Best choice for</h3>
+                <p>
+                    Teams that prioritize UI quality and long-term performance across multiple platforms and can invest in Dart talent. 
+                    Flutter is the strongest option for visually rich, consumer-facing applications where a consistent, polished experience 
+                    across devices is non-negotiable.
+                </p>
+            </section>
+
+            <section class="React">
+                <h2>React Native</h2>
+                <p>
+                    React Native was created by Meta (Facebook) and released publicly in 2015. It is built on top of Facebook's React JS library 
+                    and allows developers to write mobile applications using JavaScript or TypeScript. Rather than using a web view, React Native 
+                    bridges JavaScript code to actual native UI components like buttons, text fields, and scroll views that look and behave exactly 
+                    as a user on iOS or Android would expect.
+                </p>
+                <p>
+                    As of 2025, React Native uses the Hermes JavaScript engine by default, which significantly reduces startup time and memory 
+                    usage compared to earlier versions. Meta's ongoing New Architecture (Fabric rendering system and TurboModules) is actively 
+                    closing the remaining performance gap with Flutter. React Native maintains a 35% adoption rate among developers surveyed 
+                    by Stack Overflow in 2024.
+                </p>
+
+                <h3>Strengths</h3>
+                <ul>
+                    <li>Uses JavaScript/TypeScript, widely known language stack used by 78% of developers</li>
+                    <li>Access to the npm ecosystem with over 2.1 million packages</li>
+                    <li>Platform-specific behavior feels natural to end users</li>
+                    <li>Strong enterprise track record: proven at the scale of Facebook, Instagram, and Walmart</li>
+                    <li>Backed by both Meta and Microsoft</li>
+                    <li>Tuned apps achieve startup times under 700ms</li>
+                </ul>
+
+                <h3>Limitations</h3>
+                <ul>
+                    <li>Performance lags behind Flutter for animation-heavy or graphics-intensive apps</li>
+                    <li>Largest app size of the three in Expo configuration</li>
+                    <li>Web and desktop support is community-driven, not officially first-class</li>
+                    <li>Library updates can introduce breaking changes</li>
+                </ul>
+
+                <h3>Best choice for</h3>
+                <p>
+                    Teams if their existing development team works in JavaScript or React, and you need access to a large, affordable talent pool. 
+                    React Native is the pragmatic choice for enterprise applications where hiring speed, ecosystem size, and proven 
+                    production reliability matter more than raw rendering performance.
+                </p>
+            </section>
+
+            <section class="Ionic">
+                <h2>Ionic</h2>
+                <p>
+                    Ionic is the oldest of the three frameworks, introduced in 2013 by Drifty Co. It takes the most web-centric approach: 
+                    applications are built entirely with HTML, CSS, and JavaScript, then packaged inside a native WebView container (a browser 
+                    frame embedded in a native shell). Ionic works alongside popular JavaScript frameworks including Angular, React, and Vue, 
+                    and integrates with Apache Cordova and its successor Capacitor for native device access.
+                </p>
+                <p>
+                    Ionic's defining advantage is that it requires no new language learning for web developers. A team that builds websites 
+                    can immediately build mobile apps. The framework has over 5 million apps built with its SDK and back-end connectors 
+                    that support AWS, Azure, and Firebase out of the box.
+                </p>
+
+                <h3>Strengths</h3>
+                <ul>
+                    <li>Zero additional language learning for web developers</li>
+                    <li>Fastest time-to-market for teams with existing web skills</li>
+                    <li>Smallest app binary size of the three frameworks</li>
+                    <li>Flexible JavaScript framework choice</li>
+                    <li>One codebase can serve as both a mobile app and a progressive web app</li>
+                    <li>Native connectors for AWS, Azure, and Firebase reduce backend integration effort</li>
+                </ul>
+
+                <h3>Limitations</h3>
+                <ul>
+                    <li>WebView rendering is slower than native rendering</li>
+                    <li>Performance ceiling is lower than Flutter or React Native for demanding applications</li>
+                    <li>Debugging can be difficult</li>
+                    <li>Long-term scalability requires more maintenance as the web ecosystem evolves</li>
+                </ul>
+
+                <h3>Best choice for</h3>
+                <p>
+                    Teams where budget is the primary constraint, or your team consists entirely of web developers with no capacity to learn a new 
+                    language or framework. Ionic is also a strong option if the end product needs to function as both a mobile app and 
+                    a PWA from the same codebase, particularly for internal enterprise tools that do not require heavy native functionality.
+                </p>
+            </section>
+
+            <section class="references">
+                <h2>References</h2>
+                <p>The following sources were used in the preparation of this report.</p>
+                <ul>
+                    <li>
+                        Flutter vs React Native: Complete 2025 Framework Comparison - Droids on Roids
+                        ("https://www.thedroidsonroids.com/blog/flutter-vs-react-native-comparison")
+                    </li>
+                    <li>
+                        List of Enterprise Companies Using Flutter - Leancode
+                        ("https://leancode.co/blog/list-of-enterprise-companies-using-flutter")
+                    </li>
+                    <li>
+                        Flutter vs React Native vs Ionic in 2025 - Kodekx Solutions via Medium
+                        ("https://medium.com/@kodekx-solutions/flutter-vs-react-native-vs-ionic-choosing-the-best-cross-platform-approach-in-2025-d365e06c0296")
+                    </li>
+                    <li>
+                        React Native Official Documentation - Meta Open Source
+                        (“https://reactnative.dev/docs/getting-started“)
+                    </li>
+                    <li>
+                        Ionic Framework Pros and Cons - Markovate
+                        (“https://markovate.com/blog/ionic-framework-with-its-pros-and-cons/“)
+                    </li>
+                    <li>
+                        Ionic Official Documentation - Ionic Framework
+                        (“https://ionicframework.com/docs/“)
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 Aimee Jin.</p>
+    </footer>
+
+    <script src="registration.js"></script>
+
+</body>
+</html>
